@@ -1,0 +1,36 @@
+@media screen and (min-width: 768px) {
+
+    .how {
+
+
+        .how-btn {
+            height: 100px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        button {
+            width: 30%;
+            
+        }
+    }  
+
+    .restaurants {
+
+        flex-direction: row;
+
+        .rest-wrapper {
+            align-items: center;
+
+        }
+        
+
+
+        .rest-card {
+            display: inline-block;
+            width: 47%;
+            margin-left: 10px;
+        }
+    }
+
+}

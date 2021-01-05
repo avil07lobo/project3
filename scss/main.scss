@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import './base/resets';
+@import './base/body';
+@import './utils/variables';
+@import './layouts/restaurant';
+@import './layouts/book-menu';
+@import './layouts/how';
+@import './layouts/header';
+@import './layouts/foot';
+@import './base/media';
+
+
+.fp-menu {
+
+    background-color: whitesmoke;
+    height: auto;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    button {
+        background-color: white;
+        border-style: none;
+        border-radius: 20px;
+        padding: 1rem;
+        margin: 0.5rem;
+        box-shadow: 1em 0.5em 0.5em lightgray;
+
+    }
+
+}
+
+
+
+
+
+
+
+
