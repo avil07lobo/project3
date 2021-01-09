@@ -8,6 +8,7 @@
             flex-direction: row;
             justify-content: space-between;
         }
+    
 
         button {
             width: 30%;
@@ -17,19 +18,23 @@
 
     .restaurants {
 
-        flex-direction: row;
 
         .rest-wrapper {
             align-items: center;
+            display: flex;
+            flex-direction: column;
+            .rest-wrap {
+                display: flex;
+            }
 
         }
-        
+       
 
 
         .rest-card {
             display: inline-block;
             width: 47%;
-            margin-left: 10px;
+            // margin-left: 10px;
         }
     }
 

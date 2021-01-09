@@ -1,39 +1,76 @@
 .restaurants {
     background-color: whitesmoke;
-    padding: 1rem;
+    // padding: 1rem;
 
     a {
         text-decoration: none;
         color: black;
-        
-        .rest-txt {
-            padding: 0.5rem;
-            
-        }
     }
 
-    h2 {
-        padding-top: 2rem;
-    }
+    
 
     .rest-wrapper {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 3rem;
 
-    .rest-card {
-        background-color: white;
-        border-radius: 20px;
-        height: 250px;
-        margin-bottom: 1rem;
-        box-shadow: 1em 0.5em 0.5em lightgray;
+        h2 {
+            padding-top: 3rem;
+            padding-bottom: 1rem;
+        }
 
-        img {
-            height: 75%;
-            width: 100%;
-            border-radius: 20px 20px 0 0;
-            object-fit: cover;
+        .rest-card {
+            background-color: white;
+            border-radius: 20px;
+            height: 18rem;
+            margin-bottom: 1rem;
+            box-shadow: 1em 0.5em 0.5em lightgray;
+    
+            img {
+                height: 70%;
+                width: 100%;
+                border-radius: 20px 20px 0 0;
+                object-fit: cover;
+            }
+    
+            // p {
+            //     padding-top: 0.4rem;
+            // }
+    
+            .rest-info {
+                display: flex;
+                justify-content: space-between;
+                padding: 0.5rem;
+                margin-left: 0.5rem;
+                margin-top: 0.3rem;
+            
+                .fas {
+                    padding-right: 1rem;
+                    color: gray;
+                    fill: blue;
+                    
+                    
+                    
+                }
+                .fa-heart:hover {
+                    color: $primary-color
+                }
+            }
+
+            .new {
+                color: green;
+                font-weight: 500;
+                background-color: $tertiary-color;
+                display: inline-block;
+                padding: 0.5rem 2rem 0.5rem 2rem;
+                position: relative;
+                bottom: 15.5rem;
+                left: 14rem;
+                
+            }
         }
     }
+
+    
     
 }

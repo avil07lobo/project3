@@ -4,6 +4,6 @@ button {
     border-radius: 30px;
     border-style: none;
     font-size: large;
-    background-color: $primary-color;
+    background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
     color: #fff;
 }
