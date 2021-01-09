@@ -4,17 +4,18 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   width: 100%;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .restaurants {
   background-color: whitesmoke;
-  padding: 1rem;
 }
 
 .restaurants a {
@@ -22,34 +23,65 @@ body {
   color: black;
 }
 
-.restaurants a .rest-txt {
-  padding: 0.5rem;
-}
-
-.restaurants h2 {
-  padding-top: 2rem;
-}
-
 .restaurants .rest-wrapper {
-  padding-top: 1rem;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.restaurants .rest-wrapper h2 {
+  padding-top: 3rem;
   padding-bottom: 1rem;
 }
 
-.restaurants .rest-card {
+.restaurants .rest-wrapper .rest-card {
   background-color: white;
   border-radius: 20px;
-  height: 250px;
+  height: 18rem;
   margin-bottom: 1rem;
   -webkit-box-shadow: 1em 0.5em 0.5em lightgray;
           box-shadow: 1em 0.5em 0.5em lightgray;
 }
 
-.restaurants .rest-card img {
-  height: 75%;
+.restaurants .rest-wrapper .rest-card img {
+  height: 70%;
   width: 100%;
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.restaurants .rest-wrapper .rest-card .rest-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+.restaurants .rest-wrapper .rest-card .rest-info .fas {
+  padding-right: 1rem;
+  color: gray;
+  fill: blue;
+}
+
+.restaurants .rest-wrapper .rest-card .rest-info .fa-heart:hover {
+  color: #9356DC;
+}
+
+.restaurants .rest-wrapper .rest-card .new {
+  color: green;
+  font-weight: 500;
+  background-color: #99E2D0;
+  display: inline-block;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  position: relative;
+  bottom: 15.5rem;
+  left: 14rem;
 }
 
 .book-menu {
@@ -75,7 +107,8 @@ body {
   border-radius: 30px;
   border-style: none;
   font-size: large;
-  background-color: #9356DC;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: #fff;
 }
 
@@ -98,18 +131,64 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 1rem;
-  height: 300px;
+  height: 20rem;
 }
 
 .how button {
   background: whitesmoke;
   border-style: none;
   border-radius: 30px;
-  height: 80px;
+  height: 5rem;
+  width: 95%;
+  padding-left: 3rem;
   -webkit-box-shadow: 1em 0.5em 0.5em lightgray;
           box-shadow: 1em 0.5em 0.5em lightgray;
   font-size: medium;
+  font-weight: bold;
+  text-align: left;
+}
+
+.how .choose::before {
+  content: "1";
+  position: relative;
+  top: 0.1rem;
+  left: -3.5rem;
+  background-color: #9356DC;
+  padding: 0.5rem;
+  color: white;
+  font-weight: lighter;
+  font-size: medium;
+  border-radius: 50%;
+}
+
+.how .create::before {
+  content: "2";
+  position: relative;
+  top: 0.1rem;
+  left: -3.5rem;
+  background-color: #9356DC;
+  padding: 0.5rem;
+  color: white;
+  font-weight: lighter;
+  font-size: medium;
+  border-radius: 50%;
+}
+
+.how .go::before {
+  content: "3";
+  position: relative;
+  top: 0.1rem;
+  left: -3.5rem;
+  background-color: #9356DC;
+  padding: 0.5rem;
+  color: white;
+  font-weight: lighter;
+  font-size: medium;
+  border-radius: 50%;
 }
 
 .head-container .logo {
@@ -153,28 +232,57 @@ body {
   .how button {
     width: 30%;
   }
-  .restaurants {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
   .restaurants .rest-wrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .restaurants .rest-wrapper .rest-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .restaurants .rest-card {
     display: inline-block;
     width: 47%;
-    margin-left: 10px;
   }
 }
 
-.fp-menu {
+main {
   background-color: whitesmoke;
   height: auto;
-  border-radius: 60px;
+  border-radius: 40px;
+}
+
+main .fp-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .fp-title h1 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin-left: 1rem;
+}
+
+main .fp-title .fas {
+  padding-right: 1.5rem;
+  padding-top: 0.2rem;
+}
+
+.fp-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,16 +290,63 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem;
 }
 
 .fp-menu button {
   background-color: white;
   border-style: none;
-  border-radius: 20px;
+  border-radius: 18px;
   padding: 1rem;
-  margin: 0.5rem;
+  margin-top: 1rem;
   -webkit-box-shadow: 1em 0.5em 0.5em lightgray;
           box-shadow: 1em 0.5em 0.5em lightgray;
+  text-align: left;
+}
+
+.fp-menu button h3 {
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.fp-menu button .price-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fp-menu .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.fp-menu .items .item-title {
+  margin-top: 2rem;
+  margin-left: 0.2rem;
+}
+
+.fp-menu .order button {
+  padding-right: 4rem;
+  padding-left: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 50px;
+  border-style: none;
+  font-size: large;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

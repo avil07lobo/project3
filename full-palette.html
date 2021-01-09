@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <title>The Full Palette</title>
 </head>
 <body>
@@ -18,52 +21,99 @@
         </div>
     </header>
     <main>
+        <div class="fp-title">
+                <h1>The Full Pallete</h1>
+                <i class="fas fa-heart fa-2x" class="heart"></i>
+            </div>
         <div class="fp-menu">
-            <h1><em>The Full Pallete</em></h1>
             
-            <p>ENTREES</p>
-            <button>
-                <h3>Escargot</h3>
-                <p>With Southern French spices</p>
-            </button>
-            <button>
-                <h3>Duck Foie Gras</h3>
-                <p>with black truffle shavings</p>
-            </button>
-            <button>
-                <h3>Fried egg</h3>
-                <p>...</p>
-            </button>
-
-            <p>MAIN DISH</p>
-            <button>
-                <h3>Herb-Encrusted Steak</h3>
-                <p>With delicately sliced and seasoned veg...</p>
-            </button>
-            <button>
-                <h3>Ox Tail Shepard's Pie</h3>
-                <p>with black truffle and puree parsnips</p>
-            </button>
-            <button>
-                <h3>Filet of Sole</h3>
-                <p>with citrus dressing</p>
-            </button>
-
-            <p>DESSERTS</p>
-            <button>
-                <h3>Paris-Brest</h3>
-                <p>Revisited</p>
-            </button>
-            <button>
-                <h3>Chocolate Macaroons</h3>
-                <p>With vanilla ice cream</p>
-            </button>
-            <button>
-                <h3>Chocolate Mousse</h3>
-                <p>with spices and black truffle</p>
-            </button>
+            
+            <div class="items">
+                <p class="item-title">ENTREES</p>
+                <button>
+                    <h3>Escargot</h3>
+                    <div class="price-wrap">
+                        <p>With Southern French spices</p>
+                        <p><strong>25&euro;</strong></p>
+                    </div>
+   
+                </button>
+                <button>
+                    <h3>Duck Foie Gras</h3>
+                    <div class="price-wrap">
+                        <p>with black truffle shavings</p>
+                        <p><strong>35&euro;</strong></p>
+                    </div>
+            
+                </button>
+                <button>
+                    <h3>Fried egg</h3>
+                    <div class="price-wrap">
+                        <p>...</p>
+                        <p><strong>20&euro;</strong></p>
+                    </div>
+                    
+                </button>
+            </div>
+            
+            <div class="items">
+                <p class="item-title">MAIN DISH</p>
+                <button>
+                    <h3>Herb-Encrusted Steak</h3>
+                    <div class="price-wrap">
+                        <p>With delicately sliced and seasoned veg...</p>
+                        <p><strong>40&euro;</strong></p>
+                    </div>
+                    
+                </button>
+                <button>
+                    <h3>Ox Tail Shepard's Pie</h3>
+                    <div class="price-wrap">
+                        <p>with black truffle and puree parsnips</p>
+                        <p><strong>35&euro;</strong></p>
+                    </div>
+                    
+                </button>
+                <button>
+                    <h3>Filet of Sole</h3>
+                    <div class="price-wrap">
+                        <p>with citrus dressing</p>
+                        <p><strong>44&euro;</strong></p>
+                    </div>
+                    
+                </button>
+            </div>
+            
+            <div class="items">
+                <p class="item-title">DESSERTS</p>
+                <button>
+                    <h3>Paris-Brest</h3>
+                    <div class="price-wrap">
+                        <p>Revisited</p>
+                        <p><strong>18&euro;</strong></p>
+                    </div>
+                    
+                </button>
+                <button>
+                    <h3>Chocolate Macaroons</h3>
+                    <div class="price-wrap">
+                        <p>With vanilla ice cream</p>
+                        <p><strong>22&euro;</strong></p>
+                    </div>
+                    
+                </button>
+                <button>
+                    <h3>Chocolate Mousse</h3>
+                    <div class="price-wrap">
+                        <p>with spices and black truffle</p>
+                        <p><strong>23&euro;</strong></p>
+                    </div>
+                    
+                </button>
+            </div>
+            
             <div class="order">
-                <button class="order"><span class="order-txt">Order</span></button>
+                <button class="btn-order"><span class="order-txt">Order</span></button>
             </div>
             
 
