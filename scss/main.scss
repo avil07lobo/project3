@@ -48,6 +48,7 @@ main {
         margin-top: 1rem;
         box-shadow: 1em 0.5em 0.5em lightgray;
         text-align: left;
+        width: 95%;
 
         h3 {
             padding-bottom: 0.5rem;
@@ -58,6 +59,7 @@ main {
             display: flex;
             justify-content: space-between;
         }
+
 
     }
 
@@ -70,9 +72,25 @@ main {
             margin-top: 2rem;
             margin-left: 0.2rem;
             
+        }
+
+
+
+        .tick-box {
+            display: inline-block;
+            color: white;
+            width: 15%;
+            background-color: $tertiary-color;
+            text-align: center;
             
 
         }
+
+        .ent-btn {
+            display: flex;
+        }
+
+        
     
     }
 

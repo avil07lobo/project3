@@ -69,8 +69,15 @@ body {
   fill: blue;
 }
 
-.restaurants .rest-wrapper .rest-card .rest-info .fa-heart:hover {
-  color: #9356DC;
+.restaurants .rest-wrapper .rest-card .rest-info .heart1:hover {
+  opacity: 100%;
+  color: #fab842;
+}
+
+.restaurants .rest-wrapper .rest-card .rest-info .heart1 {
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .restaurants .rest-wrapper .rest-card .new {
@@ -305,6 +312,7 @@ main .fp-title .fas {
   -webkit-box-shadow: 1em 0.5em 0.5em lightgray;
           box-shadow: 1em 0.5em 0.5em lightgray;
   text-align: left;
+  width: 95%;
 }
 
 .fp-menu button h3 {
@@ -335,6 +343,20 @@ main .fp-title .fas {
 .fp-menu .items .item-title {
   margin-top: 2rem;
   margin-left: 0.2rem;
+}
+
+.fp-menu .items .tick-box {
+  display: inline-block;
+  color: white;
+  width: 15%;
+  background-color: #99E2D0;
+  text-align: center;
+}
+
+.fp-menu .items .ent-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .fp-menu .order button {
