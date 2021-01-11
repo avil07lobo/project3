@@ -47,13 +47,17 @@
                 .fas {
                     padding-right: 1rem;
                     color: gray;
-                    fill: blue;
-                    
-                    
-                    
+                    fill: blue;    
+                
                 }
-                .fa-heart:hover {
-                    color: $primary-color
+                .heart1:hover {
+                    opacity: 100%;
+                    color: rgba(250,184,66, 1);
+                  }
+                  
+                .heart1 {
+                    opacity: 0;
+                    transition: opacity 1s;
                 }
             }
 
