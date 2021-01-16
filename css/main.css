@@ -12,6 +12,82 @@ body {
   width: 100%;
   margin: 0 auto;
   cursor: pointer;
+  position: relative;
+  /* Animation */
+}
+
+body .load-screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 4;
+  background: lightblue;
+  -webkit-transition: visibility ease-in-out 3s;
+  transition: visibility ease-in-out 3s;
+  visibility: hidden;
+}
+
+body .loading {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  position: fixed;
+  z-index: 5;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: visibility ease-in-out 3s;
+  transition: visibility ease-in-out 3s;
+  visibility: hidden;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+body .full-pal-img {
+  position: relative;
+}
+
+body .full-pal-img img {
+  max-width: 100%;
+  min-width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
+body main {
+  position: relative;
+  top: -4rem;
+  z-index: 2;
+  overflow: visible;
 }
 
 .restaurants {
@@ -303,30 +379,69 @@ main .fp-title .fas {
   padding: 1rem;
 }
 
-.fp-menu button {
-  background-color: white;
-  border-style: none;
-  border-radius: 18px;
-  padding: 1rem;
-  margin-top: 1rem;
-  -webkit-box-shadow: 1em 0.5em 0.5em lightgray;
-          box-shadow: 1em 0.5em 0.5em lightgray;
-  text-align: left;
-  width: 95%;
-}
-
-.fp-menu button h3 {
-  padding-bottom: 0.5rem;
-  font-weight: 700;
-}
-
-.fp-menu button .price-wrap {
+.fp-menu .ent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.fp-menu .ent .ent-txt {
+  width: 100%;
+  padding: 0.5rem;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.fp-menu .ent .ent-txt h3 {
+  font-weight: 500;
+}
+
+.fp-menu .ent .ent-txt:hover + .slide-tick {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  visibility: visible;
+}
+
+.fp-menu .ent .ent-txt:hover {
+  width: 90%;
+}
+
+.fp-menu .ent .price-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fp-menu .ent .slide-tick {
+  display: inline-block;
+  color: white;
+  height: 3.6rem;
+  width: 10%;
+  background-color: #99E2D0;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0 1rem 1rem 0;
+  position: absolute;
+  right: 1rem;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  visibility: hidden;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
 .fp-menu .items {
@@ -338,25 +453,15 @@ main .fp-title .fas {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-animation: growDown 4s ease-in-out;
+          animation: growDown 4s ease-in-out;
 }
 
 .fp-menu .items .item-title {
   margin-top: 2rem;
   margin-left: 0.2rem;
-}
-
-.fp-menu .items .tick-box {
-  display: inline-block;
-  color: white;
-  width: 15%;
-  background-color: #99E2D0;
-  text-align: center;
-}
-
-.fp-menu .items .ent-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .fp-menu .order button {
@@ -370,5 +475,27 @@ main .fp-title .fas {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: #fff;
+}
+
+@-webkit-keyframes growDown {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes growDown {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
 }
 /*# sourceMappingURL=main.css.map */
