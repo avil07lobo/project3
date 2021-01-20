@@ -1,5 +1,5 @@
 .restaurants {
-    background-color: whitesmoke;
+    background-color: lightgray;
     // padding: 1rem;
 
     a {
@@ -12,7 +12,12 @@
     .rest-wrapper {
         width: 90%;
         margin: 0 auto;
-        padding-bottom: 3rem;
+        padding-bottom: 1rem;
+        
+        .rest-wrap {
+            padding-bottom: 1rem;
+        }
+        
 
         h2 {
             padding-top: 3rem;
@@ -23,8 +28,8 @@
             background-color: white;
             border-radius: 20px;
             height: 18rem;
+            box-shadow: 0.1em 0.1em 0.1em 0.1em lightgray;
             margin-bottom: 1rem;
-            box-shadow: 1em 0.5em 0.5em lightgray;
     
             img {
                 height: 70%;
@@ -44,21 +49,29 @@
                 margin-left: 0.5rem;
                 margin-top: 0.3rem;
             
-                .fas {
-                    padding-right: 1rem;
-                    color: gray;
-                    fill: blue;    
+                // .fas {
+                //     padding-right: 1rem;
+                //     color: gray;
+                //     fill: blue;    
                 
-                }
-                .heart1:hover {
+                // }
+                
+                .target:hover .heart2 {
                     opacity: 100%;
-                    color: rgba(250,184,66, 1);
-                  }
-                  
-                .heart1 {
-                    opacity: 0;
-                    transition: opacity 1s;
+                    color: $primary-color;
                 }
+
+                .target:hover .heart3 {
+                    opacity: 0;
+                    transition: opacity 2s;
+                }
+                  
+                  .heart2 {
+                    opacity: 0;
+                    transition: opacity 2s;
+                  }
+                
+                
             }
 
             .new {
@@ -68,9 +81,10 @@
                 display: inline-block;
                 padding: 0.5rem 2rem 0.5rem 2rem;
                 position: relative;
-                bottom: 15.5rem;
-                left: 14rem;
+                bottom: 17rem;
                 
+                left: 14rem;
+                    
             }
         }
     }
