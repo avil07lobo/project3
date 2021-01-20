@@ -19,7 +19,7 @@ body {
 body .load-screen {
   width: 100%;
   height: 100%;
-  position: fixed;
+  position: absolute;
   z-index: 4;
   background: lightblue;
   -webkit-transition: visibility ease-in-out 3s;
@@ -85,13 +85,13 @@ body .full-pal-img img {
 
 body main {
   position: relative;
-  top: -4rem;
+  margin-top: -4rem;
   z-index: 2;
   overflow: visible;
 }
 
 .restaurants {
-  background-color: whitesmoke;
+  background-color: lightgray;
 }
 
 .restaurants a {
@@ -102,7 +102,11 @@ body main {
 .restaurants .rest-wrapper {
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+.restaurants .rest-wrapper .rest-wrap {
+  padding-bottom: 1rem;
 }
 
 .restaurants .rest-wrapper h2 {
@@ -114,9 +118,9 @@ body main {
   background-color: white;
   border-radius: 20px;
   height: 18rem;
+  -webkit-box-shadow: 0.1em 0.1em 0.1em 0.1em lightgray;
+          box-shadow: 0.1em 0.1em 0.1em 0.1em lightgray;
   margin-bottom: 1rem;
-  -webkit-box-shadow: 1em 0.5em 0.5em lightgray;
-          box-shadow: 1em 0.5em 0.5em lightgray;
 }
 
 .restaurants .rest-wrapper .rest-card img {
@@ -139,21 +143,21 @@ body main {
   margin-top: 0.3rem;
 }
 
-.restaurants .rest-wrapper .rest-card .rest-info .fas {
-  padding-right: 1rem;
-  color: gray;
-  fill: blue;
-}
-
-.restaurants .rest-wrapper .rest-card .rest-info .heart1:hover {
+.restaurants .rest-wrapper .rest-card .rest-info .target:hover .heart2 {
   opacity: 100%;
-  color: #fab842;
+  color: #9356DC;
 }
 
-.restaurants .rest-wrapper .rest-card .rest-info .heart1 {
+.restaurants .rest-wrapper .rest-card .rest-info .target:hover .heart3 {
   opacity: 0;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
+}
+
+.restaurants .rest-wrapper .rest-card .rest-info .heart2 {
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
 }
 
 .restaurants .rest-wrapper .rest-card .new {
@@ -163,7 +167,7 @@ body main {
   display: inline-block;
   padding: 0.5rem 2rem 0.5rem 2rem;
   position: relative;
-  bottom: 15.5rem;
+  bottom: 17rem;
   left: 14rem;
 }
 
@@ -274,6 +278,11 @@ body main {
   border-radius: 50%;
 }
 
+.head-container {
+  position: relative;
+  z-index: 1;
+}
+
 .head-container .logo {
   text-align: center;
   padding: 1rem;
@@ -316,9 +325,6 @@ body main {
     width: 30%;
   }
   .restaurants .rest-wrapper {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -331,16 +337,33 @@ body main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1rem;
   }
-  .restaurants .rest-card {
+  .restaurants .rest-wrapper .rest-wrap .rest-card {
     display: inline-block;
     width: 47%;
+    margin-left: 10px;
+  }
+  .restaurants .rest-wrapper .rest-wrap .rest-card .new {
+    position: relative;
+    bottom: 17rem;
+    left: 30rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurants .rest-wrapper .rest-wrap .rest-card .new {
+    position: relative;
+    bottom: 17rem;
+    left: 20rem;
   }
 }
 
 main {
   background-color: whitesmoke;
-  height: auto;
   border-radius: 40px;
 }
 
@@ -351,6 +374,24 @@ main .fp-title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 2rem;
+}
+
+main .fp-title .target:hover .heart2 {
+  opacity: 100%;
+  color: #9356DC;
+}
+
+main .fp-title .target:hover .heart3 {
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
+}
+
+main .fp-title .heart2 {
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
 }
 
 main .fp-title h1 {
@@ -358,11 +399,6 @@ main .fp-title h1 {
   font-weight: 900;
   font-size: 1.8rem;
   margin-left: 1rem;
-}
-
-main .fp-title .fas {
-  padding-right: 1.5rem;
-  padding-top: 0.2rem;
 }
 
 .fp-menu {
@@ -465,8 +501,7 @@ main .fp-title .fas {
 }
 
 .fp-menu .order button {
-  padding-right: 4rem;
-  padding-left: 4rem;
+  padding: 1rem 4rem 1rem 4rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
   border-radius: 50px;
