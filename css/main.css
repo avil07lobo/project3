@@ -143,6 +143,10 @@ body main {
   margin-top: 0.3rem;
 }
 
+.restaurants .rest-wrapper .rest-card .rest-info p {
+  padding-top: 0.3rem;
+}
+
 .restaurants .rest-wrapper .rest-card .rest-info .target:hover .heart2 {
   opacity: 100%;
   color: #9356DC;
@@ -156,8 +160,11 @@ body main {
 
 .restaurants .rest-wrapper .rest-card .rest-info .heart2 {
   opacity: 0;
-  -webkit-transition: opacity 2s;
-  transition: opacity 2s;
+}
+
+.restaurants .rest-wrapper .rest-card .rest-info .target {
+  position: relative;
+  bottom: 1rem;
 }
 
 .restaurants .rest-wrapper .rest-card .new {
@@ -239,7 +246,23 @@ body main {
   text-align: left;
 }
 
-.how .choose::before {
+.how button:hover {
+  background-color: #ecd9f2;
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
+}
+
+.how button span {
+  position: relative;
+  left: -1rem;
+}
+
+.how .how-icon {
+  position: relative;
+  left: -2rem;
+}
+
+.how .how-list::before {
   content: "1";
   position: relative;
   top: 0.1rem;
@@ -252,35 +275,8 @@ body main {
   border-radius: 50%;
 }
 
-.how .create::before {
-  content: "2";
-  position: relative;
-  top: 0.1rem;
-  left: -3.5rem;
-  background-color: #9356DC;
-  padding: 0.5rem;
-  color: white;
-  font-weight: lighter;
-  font-size: medium;
-  border-radius: 50%;
-}
-
-.how .go::before {
-  content: "3";
-  position: relative;
-  top: 0.1rem;
-  left: -3.5rem;
-  background-color: #9356DC;
-  padding: 0.5rem;
-  color: white;
-  font-weight: lighter;
-  font-size: medium;
-  border-radius: 50%;
-}
-
 .head-container {
-  position: relative;
-  z-index: 1;
+  height: 11.5rem;
 }
 
 .head-container .logo {
@@ -292,6 +288,10 @@ body main {
   text-align: center;
   background-color: lightgray;
   padding: 1rem;
+}
+
+.head-container .location i {
+  padding-right: 0.5rem;
 }
 
 .foot {
@@ -308,6 +308,55 @@ body main {
 
 .foot p {
   padding-bottom: 0.2rem;
+}
+
+@media screen and (min-width: 280px) {
+  .restaurants .rest-wrapper .rest-wrap .rest-card .new {
+    position: relative;
+    bottom: 17rem;
+    left: 10rem;
+    padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .restaurants .rest-wrapper .rest-wrap .rest-card .new {
+    position: relative;
+    bottom: 17rem;
+    left: 12rem;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .restaurants .rest-wrapper .rest-wrap .rest-card .new {
+    position: relative;
+    bottom: 17rem;
+    left: 14rem;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .restaurants .rest-wrapper .rest-wrap .rest-card .new {
+    position: relative;
+    bottom: 17rem;
+    left: 15rem;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .restaurants .rest-wrapper .rest-wrap .rest-card .new {
+    position: relative;
+    bottom: 17rem;
+    left: 17rem;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .restaurants .rest-wrapper .rest-wrap .rest-card .new {
+    position: relative;
+    bottom: 17rem;
+    left: 23rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -350,7 +399,7 @@ body main {
   .restaurants .rest-wrapper .rest-wrap .rest-card .new {
     position: relative;
     bottom: 17rem;
-    left: 30rem;
+    left: 14.5rem;
   }
 }
 
@@ -358,8 +407,35 @@ body main {
   .restaurants .rest-wrapper .rest-wrap .rest-card .new {
     position: relative;
     bottom: 17rem;
-    left: 20rem;
+    left: 21rem;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .restaurants .rest-wrapper .rest-wrap .rest-card .new {
+    position: relative;
+    bottom: 17rem;
+    left: 26rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .restaurants .rest-wrapper .rest-wrap .rest-card .new {
+    position: relative;
+    bottom: 17rem;
+    left: 32rem;
+  }
+}
+
+body .head-container a {
+  text-decoration: none;
+  color: black;
+}
+
+body .head-container .back-btn {
+  position: absolute;
+  left: 1rem;
+  text-decoration: none;
 }
 
 main {
@@ -375,6 +451,11 @@ main .fp-title {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 2rem;
+}
+
+main .fp-title .target {
+  position: relative;
+  bottom: 1rem;
 }
 
 main .fp-title .target:hover .heart2 {
@@ -464,7 +545,7 @@ main .fp-title h1 {
   width: 10%;
   background-color: #99E2D0;
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 1.4rem;
   padding-bottom: 1rem;
   border-radius: 0 1rem 1rem 0;
   position: absolute;

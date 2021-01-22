@@ -1,6 +1,7 @@
 .head-container {
-    position: relative;
-    z-index: 1;
+
+    height: 11.5rem;
+    
     .logo {
         text-align: center;
         padding: 1rem;
@@ -10,5 +11,9 @@
         text-align: center;
         background-color: lightgray;
         padding: 1rem;
+
+        i {
+            padding-right: 0.5rem;
+        }
     }
 }

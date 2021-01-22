@@ -48,6 +48,10 @@
                 padding: 0.5rem;
                 margin-left: 0.5rem;
                 margin-top: 0.3rem;
+
+                p {
+                    padding-top: 0.3rem;
+                }
             
                 // .fas {
                 //     padding-right: 1rem;
@@ -68,8 +72,12 @@
                   
                   .heart2 {
                     opacity: 0;
-                    transition: opacity 2s;
                   }
+
+                .target {
+                    position: relative;
+                    bottom: 1rem;
+                }
                 
                 
             }
