@@ -16,6 +16,11 @@ body {
             color: black;
         }
 
+        .logo {
+            text-align: center;
+            padding: 1rem;
+        }
+
         .back-btn {
             position: absolute;
             left: 1rem;
@@ -24,15 +29,15 @@ body {
     }
 }
 
+.rest {
+    background-color: whitesmoke;
+    border-radius: 40px 40px 0 0;
+}
 
 main {
-
-    background-color: whitesmoke;
     
-    border-radius: 40px;
-
     
-    .fp-title {  
+    .rest-title {  
         display: flex;
         justify-content: space-between;
         padding-top: 2rem;
@@ -67,11 +72,23 @@ main {
     }
 }
 
-.fp-menu {
+.rest-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+
+    .items {
+
+        .underline {
+            width: 3rem;
+            height: 0.2rem;
+            margin-left: 0.2rem;
+            margin-top: 0.3rem;
+            background-color: $tertiary-color;
+        }
+        
+    }
     
 
     .ent {
@@ -86,15 +103,29 @@ main {
             width: 100%;
             padding: 0.5rem;
             transition: all 500ms ease-in-out;
+            
 
             h3 {
                 font-weight: 500;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .desc {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
 
             &:hover + .slide-tick {
                 transform: scaleX(1);
                 visibility: visible;
+
+                .icon-rotate {
+                    animation: rotation 1s normal linear;
+                }
             }
 
             &:hover {
@@ -122,49 +153,20 @@ main {
             transform-origin: right;       
             transform: scaleX(0);
             visibility: hidden;
-            transition: transform 500ms ease-in-out;
+            transition: transform 1s ease-in-out;
             
         }
 
-
-
-
     }
 
-
-    // .ent {
-        
-    //     display: flex;
-    //     justify-content: space-between;
-    //     background-color: white;
-    //     border-radius: 1rem;
-    //     margin-top: 1rem;
-    //     width: 100%;
-
-
-    //     .ent-txt {
-    //         display: flex;
-    //         flex-direction: column;
-    //         width: 100%;
-    //         padding: 0.5rem;
-    //         transition: all 1s ease-in-out;
-
-    //         &:hover {
-    //             width: 90%; 
-    //         }
-
-    //         &:hover + .slide-tick {
-    //             transform: translateX(-175px);
-                
-    //         }
-    //     }
-
-    //     .price-wrap {
-    //         display: flex;
-    //         justify-content: space-between;
-    //         width: 95%;
-    //     }
-    // }
+    @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
 
     .items {
         display: flex;
@@ -189,8 +191,6 @@ main {
 
         button {
             
-            // padding-right: 4rem;
-            // padding-left: 4rem;
             padding: 1rem 4rem 1rem 4rem;
             margin-top: 3rem;
             margin-bottom: 3rem;

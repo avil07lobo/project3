@@ -1,14 +1,35 @@
 .foot {
-    background-color: black;
+    background-color: rgb(40,40,40);
     color: white;
     padding: 1rem;
+    width: 100%;
 
     img {
-        width: 30%;
+        width: 150px;
+        height: 1.5rem;
+        
         filter: invert(100%);
+    }
+
+    .suggest {
+        display: flex;
+    }
+
+    .fas {
+        color: white;;
+        margin-right: 0.5rem;
+    }
+
+    .partner {
+        display: flex;
     }
 
     p {
         padding-bottom: 0.2rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
     }
 }

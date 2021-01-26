@@ -1,6 +1,5 @@
 .restaurants {
-    background-color: lightgray;
-    // padding: 1rem;
+    background-color: whitesmoke;
 
     a {
         text-decoration: none;
@@ -30,6 +29,10 @@
             height: 18rem;
             box-shadow: 0.1em 0.1em 0.1em 0.1em lightgray;
             margin-bottom: 1rem;
+            width: 98%;
+            min-width: 98%;
+            max-width: 98%;
+            position: relative;
     
             img {
                 height: 70%;
@@ -37,10 +40,6 @@
                 border-radius: 20px 20px 0 0;
                 object-fit: cover;
             }
-    
-            // p {
-            //     padding-top: 0.4rem;
-            // }
     
             .rest-info {
                 display: flex;
@@ -52,13 +51,6 @@
                 p {
                     padding-top: 0.3rem;
                 }
-            
-                // .fas {
-                //     padding-right: 1rem;
-                //     color: gray;
-                //     fill: blue;    
-                
-                // }
                 
                 .target:hover .heart2 {
                     opacity: 100%;
@@ -88,10 +80,9 @@
                 background-color: $tertiary-color;
                 display: inline-block;
                 padding: 0.5rem 2rem 0.5rem 2rem;
-                position: relative;
-                bottom: 17rem;
-                
-                left: 14rem;
+                position: absolute;
+                bottom: 15rem;
+                left: 11rem;
                     
             }
         }

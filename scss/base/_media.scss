@@ -1,4 +1,4 @@
-@media screen and (min-width: 280px) {
+@media screen and (min-width: 321px) and (max-width: 480px) {
     .restaurants {
 
         .rest-wrapper {
@@ -6,12 +6,13 @@
             .rest-wrap {
 
                 .rest-card {
+                    min-width: 98%;
+                    max-width: 98%;
 
                     .new {
                         position: relative;
                         bottom: 17rem;
-                        left: 10rem;
-                        padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+                        left: 11rem;
                     }
                 }
 
@@ -22,7 +23,8 @@
     }
 }
 
-@media screen and (min-width: 320px) {
+
+@media screen and (min-width: 480px) and (max-width: 540px){
     .restaurants {
 
         .rest-wrapper {
@@ -34,76 +36,7 @@
                     .new {
                         position: relative;
                         bottom: 17rem;
-                        left: 12rem;
-                    }
-                }
-
-            }
-
-        }        
-
-    }
-}
-
-@media screen and (min-width: 360px) {
-    .restaurants {
-
-        .rest-wrapper {
- 
-            .rest-wrap {
-
-                .rest-card {
-
-                    .new {
-                        position: relative;
-                        bottom: 17rem;
-                        left: 14rem;
-                    }
-                }
-
-            }
-
-        }        
-
-    }
-}
-
-@media screen and (min-width: 375px) {
-    .restaurants {
-
-        .rest-wrapper {
- 
-            .rest-wrap {
-
-                .rest-card {
-
-                    .new {
-                        position: relative;
-                        bottom: 17rem;
-                        left: 15rem;
-                    }
-                }
-
-            }
-
-        }        
-
-    }
-}
-
-@media screen and (min-width: 400px) {
-    .restaurants {
-
-        .rest-wrapper {
- 
-            .rest-wrap {
-
-                .rest-card {
-
-                    .new {
-                        position: relative;
-                        bottom: 17rem;
-                        left: 17rem;
+                        left: 20rem;
                     }
                 }
 
@@ -116,7 +49,7 @@
 
 
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 540px) and (max-width: 640px) {
     .restaurants {
 
         .rest-wrapper {
@@ -128,7 +61,30 @@
                     .new {
                         position: relative;
                         bottom: 17rem;
-                        left: 23rem;
+                        left: 24rem;
+                    }
+                }
+
+            }
+
+        }        
+
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px) {
+    .restaurants {
+
+        .rest-wrapper {
+ 
+            .rest-wrap {
+
+                .rest-card {
+
+                    .new {
+                        position: relative;
+                        bottom: 17rem;
+                        left: 29rem;
                     }
                 }
 
@@ -140,9 +96,7 @@
 }
 
 
-
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     
 
     .how {
@@ -178,34 +132,61 @@
                     display: inline-block;
                     width: 47%;
                     margin-left: 10px;
+                    min-width: 48%;
+                    max-width: 48%;
 
                     .new {
                         position: relative;
                         bottom: 17rem;
-                        left: 14.5rem;
+                        left: 14rem;
                     }
                 }
 
             }
 
         }
-       
-
-
-        
-
+    
     }
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    
+    .how {
+
+
+        .how-btn {
+            height: 100px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+
+        button {
+            width: 30%;
+            
+        }
+    }  
+
     .restaurants {
 
+
         .rest-wrapper {
- 
+            
+             
+            display: flex;
+            flex-direction: column;
             .rest-wrap {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1rem;
 
                 .rest-card {
+                    display: inline-block;
+                    width: 47%;
+                    margin-left: 10px;
+                    min-width: 48%;
+                    max-width: 48%;
 
                     .new {
                         position: relative;
@@ -216,19 +197,48 @@
 
             }
 
-        }        
-
+        }
+    
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    
+    .how {
+
+
+        .how-btn {
+            height: 100px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+
+        button {
+            width: 30%;
+            
+        }
+    }  
+
     .restaurants {
 
+
         .rest-wrapper {
- 
+            
+             
+            display: flex;
+            flex-direction: column;
             .rest-wrap {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1rem;
 
                 .rest-card {
+                    display: inline-block;
+                    width: 47%;
+                    margin-left: 10px;
+                    min-width: 48%;
+                    max-width: 48%;
 
                     .new {
                         position: relative;
@@ -239,30 +249,109 @@
 
             }
 
-        }        
-
+        }
+    
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+    .how {
+
+
+        .how-btn {
+            height: 100px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+
+        button {
+            width: 30%;
+            
+        }
+    }  
+
     .restaurants {
 
+
         .rest-wrapper {
- 
+            
+             
+            display: flex;
+            flex-direction: column;
             .rest-wrap {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1rem;
 
                 .rest-card {
+                    display: inline-block;
+                    width: 47%;
+                    margin-left: 10px;
+                    min-width: 48%;
+                    max-width: 48%;
 
                     .new {
                         position: relative;
                         bottom: 17rem;
-                        left: 32rem;
+                        left: 31rem;
                     }
                 }
 
             }
 
-        }        
-
+        }
+    
     }
 }
+
+@media screen and (min-width: 1600px) {
+    .how {
+
+
+        .how-btn {
+            height: 100px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+
+        button {
+            width: 30%;
+            
+        }
+    }  
+
+    .restaurants {
+
+
+        .rest-wrapper {
+            
+             
+            display: flex;
+            flex-direction: column;
+            .rest-wrap {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1rem;
+
+                .rest-card {
+                    display: inline-block;
+                    min-width: 48%;
+                    max-width: 48%;
+                    margin-left: 10px;
+
+                    .new {
+                        position: relative;
+                        bottom: 17rem;
+                        left: 36rem;
+                    }
+                }
+
+            }
+
+        }
+    
+    }
+}
+
