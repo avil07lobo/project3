@@ -1,5 +1,7 @@
 .how {
     padding: 1rem;
+    white-space: wrap;
+    overflow: hidden;
 
     .how-it {
         padding-bottom: 1rem;
@@ -11,8 +13,7 @@
         justify-content: space-between;
         align-items: center;
         padding-bottom: 1rem;
-        height: 20rem;
-        
+        height: 20rem;   
     }
 
     button {
@@ -26,6 +27,8 @@
         font-size: medium;
         font-weight: bold;
         text-align: left;
+        display: flex;
+        align-items: center;
 
         &:hover {
             background-color: hsl(286, 50%, 90%);
@@ -43,8 +46,34 @@
         left: -2rem;
     }
 
-    .how-list::before {
+    .how-list1::before {
         content: "1";
+        position: relative;
+        top: 0.1rem;
+        left: -3.5rem;
+        background-color: $primary-color;
+        padding: 0.5rem;
+        color: white;
+        font-weight: lighter;
+        font-size: medium;
+        border-radius: 50%;
+    }
+
+    .how-list2::before {
+        content: "2";
+        position: relative;
+        top: 0.1rem;
+        left: -3.5rem;
+        background-color: $primary-color;
+        padding: 0.5rem;
+        color: white;
+        font-weight: lighter;
+        font-size: medium;
+        border-radius: 50%;
+    }
+
+    .how-list3::before {
+        content: "3";
         position: relative;
         top: 0.1rem;
         left: -3.5rem;
