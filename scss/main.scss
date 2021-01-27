@@ -11,10 +11,22 @@
 
 body {
     .head-container {
+
+        .full-pal-img {
+            width: 100%;
+            height: auto;
+        }
+
         a {
             text-decoration: none;
             color: black;
+
+            img {
+                width: 200px;
+                height: auto;
+            }
         }
+        
 
         .logo {
             text-align: center;

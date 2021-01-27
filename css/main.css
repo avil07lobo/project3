@@ -37,7 +37,6 @@ body .loading {
           animation: spin 2s linear infinite;
   position: fixed;
   z-index: 5;
-  overflow: show;
   margin: auto;
   top: 0;
   left: 0;
@@ -212,8 +211,6 @@ body main {
 
 .how {
   padding: 1rem;
-  white-space: wrap;
-  overflow: hidden;
 }
 
 .how .how-it {
@@ -320,6 +317,11 @@ body main {
 .main-head-container .logo {
   text-align: center;
   padding: 1rem;
+}
+
+.main-head-container .logo img {
+  width: 200px;
+  height: auto;
 }
 
 .main-head-container .location {
@@ -637,9 +639,19 @@ body main {
   }
 }
 
+body .head-container .full-pal-img {
+  width: 100%;
+  height: auto;
+}
+
 body .head-container a {
   text-decoration: none;
   color: black;
+}
+
+body .head-container a img {
+  width: 200px;
+  height: auto;
 }
 
 body .head-container .logo {
