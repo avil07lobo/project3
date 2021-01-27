@@ -37,6 +37,7 @@ body .loading {
           animation: spin 2s linear infinite;
   position: fixed;
   z-index: 5;
+  overflow: show;
   margin: auto;
   top: 0;
   left: 0;
